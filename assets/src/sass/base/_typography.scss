@@ -1,0 +1,16 @@
+html {
+  background: $white-off;
+}
+
+body {
+  font: 100% $font-stack;
+  color: $gray-dark;
+}
+
+a {
+ text-decoration: none; 
+}
+
+a:hover {
+ text-decoration: underline;
+}

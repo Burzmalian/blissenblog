@@ -1,0 +1,12 @@
+/*   
+Theme Name: Mandrew's Blissenblog
+Description: Custom Wordpress theme for Andy Blissenbach
+Author: Gyles Fohl
+Version: 1.0
+*/
+
+/*
+1. The main stylesheet is located at /assets/prod/prod.min.css
+2. css/js combines and minified using Grunt files found at /assets
+3. This stylesheet is not enqueued!
+*/
