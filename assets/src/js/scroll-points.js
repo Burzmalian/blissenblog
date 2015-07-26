@@ -2,14 +2,20 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
       $('#nav').addClass('head-shrink');
+      $('.socials').addClass('topper')
     } else {
       $('#nav').removeClass('head-shrink');
+      $('.socials').removeClass('topper')
     };
-    
+
     if ($(this).scrollTop() > 100) {
-      $('.addthis_toolbox').addClass('fix').fadeIn();
+      $('.social').addClass('fix').fadeIn();
     } else {
-      $('.addthis_toolbox').removeClass('fix').fadeOut();
+      $('.social').removeClass('fix').hide();
     }
   });
+});
+
+$(window).bind("load", function() {
+   $('.socials').delay( 400 ).fadeIn(400);
 });

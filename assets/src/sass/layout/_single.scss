@@ -7,7 +7,7 @@
 }
 
 .single-header {
-  @include font-size(30px);
+  @include font-size(32px);
     font-weight: 800;
     color:$gray-medium;
     line-height: 1.2em;
@@ -22,6 +22,42 @@
     line-height: 1.7em;
     margin-bottom:1.5em;
 }
-.single-content blockquote {}
-.single-content h2 {}
-.siongle-content h3 {}
+.single-content blockquote p {
+	@include font-size(28px);
+  font-weight: 800;
+	width: 450px;
+	position: relative;
+	color: $blue-light;
+  margin-left:25px;
+  margin-right:25px;
+}
+
+.single-content blockquote p:before {
+	display: block;
+	content: "\201C";
+	@include font-size(40px);
+	position: absolute;
+	left: -25px;
+	top: 0;
+	color: $blue-light;
+}
+.single-content h2 {
+  @include font-size(26px);
+  font-weight: 800;
+  color:$gray-medium;
+  line-height: 1.2em;
+  margin-bottom:25px;
+}
+.single-content h3 {
+  @include font-size(22px);
+  font-weight: 800;
+  color:$gray-medium;
+  line-height: 1.2em;
+  margin-bottom:20px;
+}
+
+.single-featured {
+  margin-bottom:40px;
+}
+
+.mid {margin-bottom:80px;}

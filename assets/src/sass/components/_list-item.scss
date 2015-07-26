@@ -1,3 +1,5 @@
+
+
 .list-item:hover {
   .item-header a {
     color:$blue;
@@ -8,9 +10,9 @@
 }
 .item-date {
   @include font-size(12px);
-  line-height: 1em;
+  line-height: 1.5em;
   color:$gray-dark;
-  margin-bottom:5px;
+  margin-bottom:7px;
 }
 .item-header {
   @include font-size(20px);
@@ -36,11 +38,19 @@
        -o-transition: all .3s ease;
       -ms-transition: all .3s ease;
           transition: all .3s ease;
-  margin-bottom:8px;
+  margin-bottom:10px;
 }
 
 .item-description p {
   @include font-size(17px);
   line-height:1.3em;
   color:$gray-medium;
+}
+
+@media (max-width:767px) {
+
+  .list-item {
+    margin-bottom:40px;
+  }
+  
 }

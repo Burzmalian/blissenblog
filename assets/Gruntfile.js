@@ -29,21 +29,6 @@ module.exports = function (grunt) {
       }
     },
     
-    grunticon: {
-        myIcons: {
-            files: [{
-                expand: true,
-                cwd: 'src/images/grunticon',
-                src: ['*.svg', '*.png'],
-                dest: 'prod/images/grunticon'
-            }],
-            options: {
-              defaultWidth: '60px',
-              defaultHeight: '60px',
-              enhanceSVG: true
-            }
-        }
-    },
 
     watch: {
       files: ['src/js/*.js', 'src/sass/**/*.scss'],
@@ -52,12 +37,11 @@ module.exports = function (grunt) {
 
   });
 
-  grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['grunticon:myIcons', 'concat', 'uglify', 'compass', 'watch']);
+  grunt.registerTask('default', ['concat', 'uglify', 'compass', 'watch']);
 
 };

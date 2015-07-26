@@ -14,7 +14,7 @@
             </figure>
 <?php else: ?>
             <figure>
-              <img src="http://placehold.it/360x240">
+              <img class="item-img" src="http://placehold.it/360x240">
             </figure>
 <?php endif; ?>
           </a>

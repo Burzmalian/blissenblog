@@ -12,8 +12,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">  
   <title><?php if(is_single()):wp_title(''); else:  echo "Mandrew's Blissenblog | Andy Blissenbach | Modern Masculinity";  endif; ?></title>
 
- <?php include(TEMPLATEPATH . '/inc/grunticon_script.php'); ?>
-
   <!--Favicons -->
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   
@@ -43,14 +41,13 @@
         </div>  
       </nav>
       <div class="search"></div>
-      <ul class="socials">
-        <li><a href="#" class="icon-facebook" data-grunticon-embed title="Facebook">
-          Facebook
+      <div class="socials">
+      <a href="https://www.facebook.com/blissenblog" class="icon-facebook" data-grunticon-embed title="Facebook">
+          <object type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/assets/prod/images/facebook.svg">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/prod/images/facebook.png" alt="Facebook" />
+          </object>
         </a>
-        </li>
-        <li><a href="#">Register</a>
-        </li>
-      </ul>
+      <div>
     </header>
   </div>
   <div class="wrapper"><!-- ends in footer.php -->
