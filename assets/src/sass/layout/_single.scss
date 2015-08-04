@@ -15,6 +15,11 @@
 
 .single-img {margin-bottom:15px;}
 
+.single-content img {
+  max-width: 100%;
+      width: initial;
+}
+
 .single-content p {
   @include font-size(18px);
     font-weight: 400;
@@ -58,6 +63,25 @@
 
 .single-featured {
   margin-bottom:40px;
+  max-width: 100%;
+  margin:auto;
 }
 
 .mid {margin-bottom:80px;}
+
+@media (max-width: 767px) {
+  .single-intro {
+  padding: 32px 0 25px 0;
+  margin-bottom:25px;
+}
+  .single-content p {
+  @include font-size(16px);
+    font-weight: 400;
+    color:$gray-medium;
+    line-height: 1.5em;
+    margin-bottom:1.3em;
+  }
+  .single-header {
+    @include font-size(26px);
+}
+}

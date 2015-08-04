@@ -7,8 +7,11 @@
     background: $gray-dark;
     position: fixed;
     z-index: 3;
-    -webkit-transition: all .3s; /* Safari */
-    transition: all .3s;
+    -webkit-transition: padding .3s; /* Safari */
+    transition: padding .3s;
+    &.head-shrink {
+      padding:15px 20px;
+    }
   }
 }
 
@@ -27,6 +30,10 @@
   }
   
 }
+
+
+
+
 
 .main-menu {
   display:block;
@@ -88,6 +95,100 @@
   
 }
 
-.topper {
- top:10px;
+.nav-icon {
+  margin:0;
+  width: 25px;
+  display:none;
+  position: absolute;
+  right: 60px;
+  top: 6px;
 }
+.nav-icon:hover {cursor: pointer;}
+.nav-icon:after, 
+.nav-icon:before, 
+.nav-icon div {
+  background-color: $white-off;
+  border-radius: 2px;
+  content: '';
+  display: block;
+  height: 3px;
+  margin: 5px 0;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.nav-icon.active:before {
+  transform: translateY(8px) rotate(135deg);
+  -moz-transform: translateY(8px) rotate(135deg);
+  -webkit-transform: translateY(8px) rotate(135deg);
+}
+
+.nav-icon.active:after {
+  transform: translateY(-8px) rotate(-135deg);
+  -moz-transform: translateY(-8px) rotate(-135deg);
+  -webkit-transform: translateY(-8px) rotate(-135deg);
+}
+
+.nav-icon.active div {
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.topper {
+ top:8px;
+}
+
+
+
+@media (max-width:767px) {
+  .title {
+    @include font-size(22px);
+  }
+  .head-wrap .head {
+    padding:10px;
+    &.head-shrink {
+      padding:10px;
+    }
+  }
+  .nav-icon {
+    display:block;
+  }
+  .main-menu {
+    display:none;
+    position: absolute;
+    top:42px;
+    left:0;
+    width:100%;
+    li {
+      width:100%;
+      a {
+      background:#444;
+      padding:10px 20px;
+      }
+    }
+  }
+  .main-menu.show {
+    display:block;
+  }
+}
+
+@media (max-width:480px) {
+  .title {
+    @include font-size(18px);
+    line-height:20px;
+  }
+  .socials {
+    top:8px;
+    right:10px;
+  }
+  .nav-icon {
+  right: 50px;
+  }
+  .main-menu {
+    display:none;
+    position: absolute;
+    top:40px;
+  }
+}
+

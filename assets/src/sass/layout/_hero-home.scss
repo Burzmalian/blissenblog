@@ -33,3 +33,14 @@
 
 .home-row {margin-bottom:50px;}
 
+@media (max-width:480px) {
+  .hero-txt {
+     padding: 15px;
+    h1 {
+    @include font-size(28px);
+    }
+  }
+  .wrapper {
+    margin-top:40px;
+  }
+}

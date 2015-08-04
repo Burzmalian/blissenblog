@@ -19,3 +19,8 @@ $(document).ready(function () {
 $(window).bind("load", function() {
    $('.socials').delay( 400 ).fadeIn(400);
 });
+
+  $('.nav-icon').click(function() {
+    $(this).toggleClass('active');
+    $('.main-menu').toggleClass('show');
+  });
