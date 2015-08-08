@@ -7,6 +7,7 @@
       <div class="col-sm-10 col-sm-offset-1">
       <h1 class="single-header"><?php the_title(); ?> </h1>
       <p class="item-date"><?php echo get_the_date(); ?><br><?php echo get_the_author(); ?></p>
+      <iframe src="http://www.facebook.com/plugins/like.php?href=<?php echo urlencode(get_permalink()); ?>&amp;layout=button_count&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp" style="overflow:hidden;width:100%;height:20px;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
       </div>
       </div>
     </div>

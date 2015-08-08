@@ -5,6 +5,7 @@ html {
 body {
   font: 100% $font-stack;
   color: $gray-dark;
+  font-weight:400;
 }
 
 a {
@@ -13,4 +14,12 @@ a {
 
 a:hover {
  text-decoration: underline;
+}
+
+em {
+  font-style:italic;
+}
+
+strong {
+  font-weight: 800;
 }

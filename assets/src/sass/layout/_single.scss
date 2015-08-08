@@ -27,6 +27,7 @@
     line-height: 1.7em;
     margin-bottom:1.5em;
 }
+
 .single-content blockquote p {
 	@include font-size(28px);
   font-weight: 800;
@@ -62,9 +63,9 @@
 }
 
 .single-featured {
-  margin-bottom:40px;
   max-width: 100%;
-  margin:auto;
+  margin:0 auto 40px auto;
+  width:initial;
 }
 
 .mid {margin-bottom:80px;}
