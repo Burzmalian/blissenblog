@@ -56,7 +56,7 @@
       <div class="socials">
       <a href="https://www.facebook.com/blissenblog" class="icon-facebook" data-grunticon-embed title="Facebook">
           <object type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/assets/prod/images/facebook.svg">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/prod/images/facebook.png" alt="Facebook" />
+            <img style="width:100%;height:auto;" src="<?php echo get_template_directory_uri(); ?>/assets/prod/images/facebook.png" alt="Facebook" />
           </object>
         </a>
       <div>

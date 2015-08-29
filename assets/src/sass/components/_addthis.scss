@@ -22,10 +22,15 @@
       content:"";
       z-index:2;
     }
+    img {
+      width:100%;
+      height:auto;
+    }
     
     object {
       width:100%;
       display:block;
+      height:auto;
     }
     &:hover {
       
