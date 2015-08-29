@@ -1,5 +1,8 @@
 .social {
   display:none;
+  svg {
+    max-height:100%;
+  }
   a {
     margin:20px auto;
     display:block;

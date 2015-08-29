@@ -8,6 +8,7 @@
     -webkit-filter: brightness(1.2);
   }
 }
+.single-content p.item-date,
 .item-date {
   @include font-size(12px);
   line-height: 1.5em;
